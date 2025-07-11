@@ -139,13 +139,13 @@
 }
 
 .swiper-hero__button-next {
-  background-image: url('../../img/icons/arrow-right.svg');
+  background-image: url('../img/icons/arrow-right.svg');
   right: 0px;
 }
 
 .swiper-hero__button-prev {
   left: 0;
-  background-image: url('../../img/icons/arrow-left.svg');
+  background-image: url('../img/icons/arrow-left.svg');
 }
 
 .swiper-hero__button-next:hover,
