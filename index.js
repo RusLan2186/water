@@ -1,16 +1,3 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//   const burger = document.querySelector('.header__burger');
-//   const navMenu = document.querySelector('.nav__menu');
-//   const body = document.querySelector('body');
-
-//   burger.addEventListener('click', () => {
-//     navMenu.classList.toggle('open-menu');
-//     burger.classList.toggle('open-menu');
-//     body.classList.toggle('lock');
-//   });
-// });
-
-
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.header__burger');
   const navMenu = document.querySelector('.nav__menu');
@@ -36,7 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
 const heroSwiper = new Swiper('.hero__swiper', {
   slidesPerView: 1,
   speed: 800,
+  loop: true,
   grabCursor: true,
+    autoplay: {
+    delay: 3000,      
+    disableOnInteraction: false, 
+  },
 
   pagination: {
     el: '.swiper-hero-pagination',
