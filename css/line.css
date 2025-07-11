@@ -1,0 +1,82 @@
+.page__line {
+  margin-bottom: clamp(40px, 8vw, 160px);
+  background: url('../img/bg-blue-btn.png') no-repeat center center / 100% 90%;
+  position: relative;
+}
+
+.line__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: clamp(20px, 4vw, 44px);
+  margin-bottom: 60px;
+}
+
+.line__text_block {
+  width: 100%;
+}
+
+.line__title {
+  margin-bottom: 32px;
+}
+
+.line__text {
+  color: #282d30;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.line__img_block {
+  width: 100%;
+}
+
+.line__img_block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  aspect-ratio: 1/1;
+}
+
+.slide-document__image {
+  width: 100%;
+}
+
+.slide-document__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+.line__decor{
+  bottom: -15%;
+}
+
+@media (min-width: 991.98px) {
+  .line__text_block {
+    max-width: 548px;
+  }
+
+  .line__img_block {
+    max-width: 560px;
+  }
+
+  .slide-document__image {
+    max-width: 260px;
+  }
+}
+@media (max-width: 1199.98px) {
+  .documents {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .line__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 40px;
+  }
+}
