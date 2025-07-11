@@ -123,7 +123,6 @@ const docSwiper = new Swiper('.swiper-documents', {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
-
     const headerOffset = 116;
     const targetId = this.getAttribute('href');
     const target = document.querySelector(targetId);
