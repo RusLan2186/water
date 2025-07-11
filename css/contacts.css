@@ -116,6 +116,9 @@
 }
 
 @media (max-width: 767.98px) {
+  .contacts__map {
+    padding-bottom: 90%;
+  }
   .contacts__title {
     margin-bottom: 30px;
   }
@@ -127,9 +130,6 @@
 }
 
 @media (max-width: 490px) {
-  .contacts__map {
-    padding-bottom: 70%;
-  }
   .contacts__phone {
     flex-direction: column;
     row-gap: 20px;
