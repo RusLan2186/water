@@ -13,7 +13,7 @@
 }
 
 .benefits__text {
-  color: #282d30;
+  color: var(--color-text);
   line-height: 1;
 }
 
@@ -41,7 +41,7 @@
   margin-bottom: 21px;
   width: 122px;
   height: 122px;
-  background-color: #caddff;
+  background-color: var(--color-accent-light);
 }
 
 .item-benefits__icon {
@@ -50,12 +50,12 @@
   background-color: rgba(2, 86, 229, 0.1);
 }
 .item-benefits__title {
-  color: #0256e5;
+  color: var(--color-blue);
   font-weight: 700;
   margin-bottom: 24px;
 }
 .item-benefits__text {
-  color: #282d30;
+  color: var(--color-text);
   line-height: 1.5;
   text-align: center;
 }

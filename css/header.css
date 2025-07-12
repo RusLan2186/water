@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   z-index: 50;
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 
 .header-container {
@@ -43,14 +43,14 @@
 .nav-link,
 .contacts__link {
   font-size: 16px;
-  color: #282d30;
+  color: var(--color-text);
   line-height: 1;
   transition: 0.3s all;
   letter-spacing: 0;
 }
 .nav-link--active,
 .contacts__link--active {
-  color: #0049c8;
+  color: var(--color-blue-hover);
   font-weight: 700;
 }
 .nav-link--active:hover,
@@ -59,7 +59,7 @@
 }
 .nav-link:hover,
 .contacts__link:hover {
-  color: #0049c8;
+  color: var(--color-blue-hover);
 }
 
 .header__contacts,
@@ -80,7 +80,7 @@
 }
 .link--email {
   font-size: 14px;
-  color: #0256e5;
+  color: var(--color-blue);
   font-weight: 400;
   transition: 0.3s opacity;
 }
@@ -132,7 +132,7 @@
     align-items: flex-end;
     row-gap: 20px;
     margin: 0;
-    background-color: #CADDFF;
+    background-color: var(--color-accent-light);
   }
   .nav__menu:before {
     content: '';
@@ -141,7 +141,7 @@
     right: 0;
     width: 100%;
     height: 70px;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     z-index: 5;
   }
   .nav__menu.open-menu {
@@ -185,12 +185,12 @@
     border: none;
     flex-shrink: 0;
     white-space: nowrap;
-    background-color: #ffffff;
+    background-color: var(--color-white);
   }
   .header__burger:before,
   .header__burger:after {
     content: '';
-    background-color: #282d30;
+    background-color: var(--color-text);
     position: absolute;
     width: 100%;
     height: 2px;
@@ -204,7 +204,7 @@
     bottom: 0;
   }
   .header__burger span {
-    background-color: #282d30;
+    background-color: var(--color-text);
     position: absolute;
     width: 100%;
     height: 2px;

@@ -1,5 +1,5 @@
 .footer {
-  background-color: #282d30;
+  background-color: var(--color-text);
   padding: 60px 0;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .nav-link--footer {
-  color: #ffffff;
+  color: var(--color-white);
   font-size: 16px;
   font-weight: 400;
 }
@@ -44,7 +44,7 @@
 }
 
 .text--white {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .footer__content_bottom {
@@ -62,7 +62,7 @@
 }
 
 .footer__contact_link {
-  color: #ffffff;
+  color: var(--color-white);
   font-weight: 700;
   font-size: 16px;
   transition: 0.3s color;
@@ -75,7 +75,7 @@
 
 .footer__contact_link:hover,
 .footer__contact_link--email:hover {
-  color: #0049c8;
+  color: var(--color-blue-hover);
 }
 
 .footer__btn {

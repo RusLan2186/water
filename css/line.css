@@ -21,7 +21,7 @@
 }
 
 .line__text {
-  color: #282d30;
+  color: var(--color-text);
   line-height: 1.6;
   font-weight: 400;
 }

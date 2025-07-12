@@ -26,10 +26,21 @@
   scroll-margin-top: 116px;
 }
 
+:root {
+  --color-white: #ffffff;
+  --color-text: #282d30;
+  --color-blue: #0256e5;
+  --color-blue-hover: #0049c8;
+  --color-yellow: #eee711;
+  --color-yellow-hover: #d8d102;
+  --color-accent-light: #caddff;
+  --color-light-blue: #4d8fff;
+}
+
 body {
   font-family: 'FuturaRound';
   font-weight: 400;
-  color: #282d30;
+  color: var(--color-text);
   box-sizing: border-box;
   font-size: 16px;
 }
@@ -55,47 +66,47 @@ body {
 .title {
   font-size: clamp(25px, 2.5vw, 32px);
   font-weight: 700;
-  color: #282d30;
+  color: var(--color-text);
   line-height: auto;
 }
 
 .title--white,
 .text--white {
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .btn__link {
   font-size: 16px;
   display: block;
-  background-color: #0256e5;
+  background-color: var(--color-blue);
   line-height: 1;
-  color: #ffffff;
+  color: var(--color-white);
   border-radius: 60px;
   text-align: center;
   transition: 0.3s background-color;
-  border: 6px solid #caddff;
+  border: 6px solid var(--color-accent-light);
   box-sizing: border-box;
 }
 
 .link__btn {
   border-radius: 40px;
   padding: 20px 25px;
-  color: #282d30;
+  color: var(--color-text);
   transition: 0.3s background-color;
   text-align: center;
-  border: 6px solid #4d8fff;
+  border: 6px solid var(--color-light-blue);
   box-sizing: border-box;
 }
 
 .link-btn--yellow {
-  background-color: #eee711;
+  background-color: var(--color-yellow);
 }
 .link-btn--yellow:hover {
-  background-color: #d8d102;
+  background-color: var(--color-yellow-hover);
 }
 
 .btn__link:hover {
-  background-color: #0049c8;
+  background-color: var(--color-blue-hover);
 }
 
 .text--bold {
@@ -122,7 +133,7 @@ body {
 }
 
 .decor__ceil {
-  border: 1px solid #caddff;
+  border: 1px solid var(--color-accent-light);
   width: 100%;
   max-width: 97.62px;
   height: 100px;
@@ -146,11 +157,12 @@ body {
 .decor__ceil:nth-child(12) { animation-delay: 2.75s; }
 
 @keyframes highlight {
-  0%   { background-color: #caddff; }
-  8%   { background-color: #caddff;   }
+  0%   { background-color: var(--color-accent-light); }
+  8%   { background-color: var(--color-accent-light);   }
   10%  { background-color: transparent; }
   100% { background-color: transparent; }
 }
+
 .bg--yellow {
   background-color: #f4ee45;
 }
@@ -158,8 +170,6 @@ body {
 .bg--blue {
   background-color: #1864f4;
 }
-
-
 
 
 @media (max-width: 1024px) {

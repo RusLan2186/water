@@ -74,13 +74,13 @@
 
 .contacts__link {
   font-weight: 400;
-  color: #282d30;
+  color: var(--color-text);
   line-height: 1;
 }
 
 .contacts__adress p {
   font-weight: 400;
-  color: #282d30;
+  color: var(--color-text);
   line-height: 1;
 }
 

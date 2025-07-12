@@ -41,7 +41,7 @@
 .characteristics__item {
   display: flex;
   justify-content: space-between;
-  color: #282d30;
+  color: var(--color-text);
 }
 
 .characteristics__item strong {
