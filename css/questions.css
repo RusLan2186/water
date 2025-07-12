@@ -126,6 +126,10 @@
   background-color: #488cff;
 }
 
+.decor__ceil--no-animate{
+  animation: none;
+}
+
 @media (max-width: 1599.98px) {
   .questions__content {
     column-gap: 20px;
