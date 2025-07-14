@@ -1,3 +1,9 @@
+document.querySelectorAll('img').forEach(img => {
+  if (!img.hasAttribute('loading')) {
+    img.setAttribute('loading', 'lazy');
+  }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.header__burger');
   const navMenu = document.querySelector('.nav__menu');
