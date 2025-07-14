@@ -44,7 +44,7 @@ body {
   box-sizing: border-box;
   font-size: 16px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 899.98px) {
   body.lock {
     overflow: hidden;
   }
