@@ -27,8 +27,6 @@
   width: 100%;
 }
 
-
-
 .swiper-hero__slide {
   max-width: 1690px;
 }
@@ -198,6 +196,19 @@ span.swiper-pagination-bullet-active {
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+  }
+  
+  .hero__swiper_content::before {
+    content: '';
+    background: url('../img/hero/Ellipse.png') no-repeat center center / cover;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scale(1.2);
   }
 
   .hero-swiper__text_block {
@@ -219,18 +230,13 @@ span.swiper-pagination-bullet-active {
   .hero-text__info {
     border-radius: 10px;
     padding: 5px 20px;
-    backdrop-filter: blur(3px);
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
   }
   .link-btn--yellow {
     margin: 0 auto;
   }
 
   .hero-swiper__image_block {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: none;
   }
 }
 
