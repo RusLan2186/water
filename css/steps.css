@@ -21,6 +21,28 @@
   align-items: center;
 }
 
+.item-steps:nth-of-type(1).show {
+  transition-delay: 0.3s;
+}
+
+.item-steps:nth-of-type(2).show {
+  transition-delay: 0.6s;
+}
+
+.item-steps:nth-of-type(3).show {
+  transition-delay: 0.9s;
+}
+.item-steps:nth-of-type(4).show {
+  transition-delay: 1.2s;
+}
+.item-steps:nth-of-type(5).show {
+  transition-delay: 1.5s;
+}
+
+.item-steps:nth-of-type(6).show {
+  transition-delay: 1.8s;
+}
+
 .item-steps__number {
   color: var(--color-blue);
   font-weight: 700;
@@ -50,7 +72,7 @@
   .item-steps__number {
     margin-bottom: 15px;
   }
-  
+
   .item-steps__text {
     text-align: center;
     margin-bottom: 15px;

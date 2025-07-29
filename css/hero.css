@@ -55,8 +55,8 @@
   height: 100%;
   z-index: -1;
   transform: scale(1.6);
-  backdrop-filter: blur(4px);
-  border-radius: 40px;
+  backdrop-filter: blur(179.3px);
+  border-radius: 16px;
 }
 
 .hero-text {

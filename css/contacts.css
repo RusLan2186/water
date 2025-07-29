@@ -13,6 +13,8 @@
   position: relative;
   width: 100%;
   padding-bottom: 48%;
+  transform: translateY(-150px);
+  transition: 1s transform;
 }
 
 .contacts__map iframe {
@@ -31,9 +33,12 @@
   padding: 89px 50px 103px 97px;
   max-width: 601px;
   width: 100%;
+   transform: translateY(150px);
+  transition: 1s transform;
 }
 .contacts__title {
   margin-bottom: 60px;
+   transform: translateY(0);
 }
 
 .contacts__phone,
@@ -127,6 +132,10 @@
   .contacts__adress {
     margin-bottom: 30px;
   }
+}
+
+.slide-in-towards {
+  transform: translateX(0);
 }
 
 @media (max-width: 490px) {

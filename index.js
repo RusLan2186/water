@@ -31,9 +31,9 @@ const heroSwiper = new Swiper('.hero__swiper', {
   speed: 800,
   loop: true,
   grabCursor: true,
-    autoplay: {
-    delay: 3000,      
-    disableOnInteraction: false, 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
   },
 
   pagination: {
@@ -136,3 +136,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    const className = entry.target.dataset.showClass;
+    console.log(entry.target);
+    
+    if (entry.isIntersecting) {
+      entry.target.classList.add(className);
+    } else {
+      entry.target.classList.remove(className);
+    }
+  });
+});
+
+const animatedElements = document.querySelectorAll('[data-show-class]');
+animatedElements.forEach(el => observer.observe(el));
+
+// const sections = document.querySelectorAll('.section');
+// sections.forEach(section => {
+//   observer.observe(section);
+// });

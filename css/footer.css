@@ -1,6 +1,8 @@
 .footer {
   background-color: var(--color-text);
   padding: 60px 0;
+  opacity: 0;
+  transition:  1s opacity;
 }
 
 .footer__content {
@@ -83,6 +85,10 @@
   border: 1px solid #797b7cbd;
   flex-shrink: 0;
   white-space: nowrap;
+}
+
+.fed-in{
+  opacity: 1;
 }
 
 @media (max-width: 1019.98px) {

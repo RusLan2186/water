@@ -26,6 +26,8 @@
   margin-top: -95px;
   z-index: 10;
   align-self: flex-end;
+   transform: translateY(-150px);
+  transition: 0.6s all ease 0s;
 }
 
 .questions__image_block img {
@@ -38,6 +40,8 @@
   width: 100%;
   position: relative;
   z-index: 10;
+   transform: translateX(-150px);
+  transition: 0.6s all ease 0s;
 }
 
 .question__title_block {
@@ -45,6 +49,7 @@
 }
 .question__title {
   margin-bottom: 20px;
+   transform: translateY(0);
 }
 
 .question__text {
@@ -128,6 +133,10 @@
 
 .decor__ceil--no-animate{
   animation: none;
+}
+
+.slide-in-towards {
+  transform: translateX(0);
 }
 
 @media (max-width: 1599.98px) {

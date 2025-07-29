@@ -7,6 +7,8 @@
   top: 0;
   z-index: 50;
   background-color: var(--color-white);
+  opacity: 0;
+  transition: 1s opacity;
 }
 
 .header-container {
@@ -98,7 +100,9 @@
   z-index: 10;
 }
 
-
+.fed-in {
+  opacity: 1;
+}
 
 @media (min-width: 899.98px) {
   .header__burger {
@@ -106,7 +110,7 @@
   }
 }
 
- @media (max-width: 899.98px) {
+@media (max-width: 899.98px) {
   .header {
     height: 70px;
   }
@@ -223,7 +227,7 @@
   .header__burger.open-menu span {
     transform: scale(0);
   }
-} 
+}
 
 @media (max-width: 499.98px) {
   .header__logo_img {
