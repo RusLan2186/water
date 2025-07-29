@@ -141,7 +141,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     const className = entry.target.dataset.showClass;
-    console.log(entry.target);
+  
     
     if (entry.isIntersecting) {
       entry.target.classList.add(className);
