@@ -142,7 +142,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const options = {
   rootMargin: "0px",
   scrollMargin:  "0px",
-  threshold: 0.2,
+  threshold: 0.1,
 };
 
 const observer = new IntersectionObserver(entries => {
