@@ -19,7 +19,8 @@
   position: relative;
   flex: 0 0 49%;
    transform: translateX(-150px);
-  transition: 0.6s all ease 0s;
+   opacity: 0;
+  transition: 1s all ease 0s;
 }
 
 .about__img_block img {
@@ -35,7 +36,8 @@
 .about__info {
   flex: 0 0 47%;
    transform: translateX(150px);
-  transition: 0.6s all ease 0s;
+   opacity: 0;
+  transition: 1s all ease 0s;
 }
 
 .about__title {
@@ -53,6 +55,7 @@
 
 .slide-in-towards {
   transform: translateX(0);
+  opacity: 1;
 }
 
 @media (min-width: 899.98px) {

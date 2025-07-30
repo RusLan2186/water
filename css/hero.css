@@ -4,7 +4,15 @@
   padding-top: 40px;
   position: relative;
   margin-bottom: clamp(40px, 8vw, 140px);
+
+  transform: scale(0.2);
+  transition: transform 1.5s;
 }
+
+.scale {
+  transform: scale(1);
+}
+
 .page__hero:before {
   content: '';
   position: absolute;
@@ -198,7 +206,7 @@ span.swiper-pagination-bullet-active {
     text-align: center;
     position: relative;
   }
-  
+
   .hero__swiper_content::before {
     content: '';
     background: url('../img/hero/Ellipse.png') no-repeat center center / cover;

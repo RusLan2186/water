@@ -48,6 +48,7 @@ const heroSwiper = new Swiper('.hero__swiper', {
   },
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, no-undef
 const clientsSwiper = new Swiper('.clients__swiper', {
   slidesPerView: 3,
   speed: 800,
@@ -138,23 +139,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
+const options = {
+  rootMargin: "0px",
+  scrollMargin: "-50px 0px",
+  threshold: 0.5,
+};
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     const className = entry.target.dataset.showClass;
-  
-    
+
+
     if (entry.isIntersecting) {
       entry.target.classList.add(className);
-    } else {
+     
+      //  observer.unobserve(entry.target);
+    }
+    else {
       entry.target.classList.remove(className);
     }
   });
-});
+}, options);
 
 const animatedElements = document.querySelectorAll('[data-show-class]');
 animatedElements.forEach(el => observer.observe(el));
 
-// const sections = document.querySelectorAll('.section');
-// sections.forEach(section => {
-//   observer.observe(section);
-// });

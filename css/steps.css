@@ -22,25 +22,25 @@
 }
 
 .item-steps:nth-of-type(1).show {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 
 .item-steps:nth-of-type(2).show {
-  transition-delay: 0.6s;
+  transition-delay: 0.4s;
 }
 
 .item-steps:nth-of-type(3).show {
-  transition-delay: 0.9s;
+  transition-delay: 0.6s;
 }
 .item-steps:nth-of-type(4).show {
-  transition-delay: 1.2s;
+  transition-delay: 0.8s;
 }
 .item-steps:nth-of-type(5).show {
-  transition-delay: 1.5s;
+  transition-delay: 1s;
 }
 
 .item-steps:nth-of-type(6).show {
-  transition-delay: 1.8s;
+  transition-delay: 1.2s;
 }
 
 .item-steps__number {

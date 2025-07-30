@@ -45,23 +45,23 @@
 
 
 .slide-document:nth-child(1).show {
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
 }
 .slide-document:nth-child(2).show {
-  transition-delay: 0.6s;
+  transition-delay: 0.4s;
 }
 
 .slide-document:nth-child(3).show {
-  transition-delay: 0.9s;
+  transition-delay: 0.6s;
 }
 .slide-document:nth-child(4).show {
-  transition-delay: 1.2s;
+  transition-delay: 0.8s;
 }
 .slide-document:nth-child(5).show {
-  transition-delay: 1.5s;
+  transition-delay: 1s;
 }
 .slide-document:nth-child(6).show {
-  transition-delay: 1.8s;
+  transition-delay: 1.2s;
 }
 
 

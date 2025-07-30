@@ -14,7 +14,8 @@
   width: 100%;
   padding-bottom: 48%;
   transform: translateY(-150px);
-  transition: 1s transform;
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 }
 
 .contacts__map iframe {
@@ -33,12 +34,13 @@
   padding: 89px 50px 103px 97px;
   max-width: 601px;
   width: 100%;
-   transform: translateY(150px);
-  transition: 1s transform;
+  opacity: 0;
+  transform: translateY(150px);
+ transition: transform 1s, opacity 1s;
 }
 .contacts__title {
   margin-bottom: 60px;
-   transform: translateY(0);
+  transform: translateY(0);
 }
 
 .contacts__phone,
@@ -93,6 +95,11 @@
   padding: 14px 25px;
 }
 
+.slide-in-towards {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 @media (max-width: 1199.98px) {
   .contacts__info {
     padding: 89px 20px 103px 40px;
@@ -134,9 +141,7 @@
   }
 }
 
-.slide-in-towards {
-  transform: translateX(0);
-}
+
 
 @media (max-width: 490px) {
   .contacts__phone {
